@@ -1,4 +1,4 @@
-import Starter from "./tutorial/02-useEffect/starter/02-useEffect-basics.jsx";
+import Starter from "./tutorial/02-useEffect/starter/04-fetch-data.jsx";
 import Final from "./tutorial/01-useState/final/03-useState-array.jsx";
 
 function App() {
