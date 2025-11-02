@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Example = () => {
-  const [condition, setCondition] = useState(true);
+  const [condition, setCondition] = useState(null);
   if (condition) {
     // won't work
     const [state, setState] = useState(false);
