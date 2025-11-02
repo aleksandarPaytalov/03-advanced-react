@@ -27,6 +27,7 @@ const MultipleReturnsFetchData = () => {
       }, 3000);
     };
     fetchData();
+    // ----><----- Wrong place and order to destruct the user properties 
   }, []);
   if (isLoading) {
     return <h2>loading...</h2>;
@@ -34,8 +35,8 @@ const MultipleReturnsFetchData = () => {
   if (isError) {
     return <h2>There was an error</h2>;
   }
+  
   const { avatar_url, name, company, bio } = user;
-
   return (
     <div>
       <img
