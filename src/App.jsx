@@ -1,10 +1,9 @@
-import Starter from "./tutorial/02-useEffect/starter/05-cleanup-function.jsx";
-import Final from "./tutorial/01-useState/final/03-useState-array.jsx";
+import Navbar from "./tutorial/04-project-structure/starter/Navbar";
 
 function App() {
   return (
     <div className="container">
-      <Starter />
+      <Navbar />
     </div>
   );
 }
