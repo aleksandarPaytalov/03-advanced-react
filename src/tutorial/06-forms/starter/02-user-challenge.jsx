@@ -15,7 +15,7 @@ const UserChallenge = () => {
     const updatedUsers = [...users, newUser];
     setUsers(updatedUsers);
 
-    //setName("");
+    setName("");
   };
 
   const removeUser = (id) => {
