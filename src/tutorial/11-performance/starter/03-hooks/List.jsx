@@ -1,11 +1,13 @@
 import { memo } from "react";
-import Item from "./Person";
+import Person from "./Person";
 
-const List = ({ people }) => {
+const List = ({ people, removePerson }) => {
   return (
     <div>
       {people.map((person) => {
-        return <Item key={person.id} {...person} />;
+        return (
+          <Person key={person.id} {...person} removePerson={removePerson} />
+        );
       })}
     </div>
   );
