@@ -1,16 +1,17 @@
-import { useState } from 'react';
-import { data } from '../../../../data';
-import List from './List';
+import { useState } from "react";
+import { data } from "../../../../data";
+import List from "./List";
+
 const LowerState = () => {
   const [people, setPeople] = useState(data);
   const [count, setCount] = useState(0);
 
   return (
-    <section>
+    <section style={{ textAlign: "center", marginTop: "5rem" }}>
       <button
-        className='btn'
+        className="btn"
         onClick={() => setCount(count + 1)}
-        style={{ marginBottom: '1rem' }}
+        style={{ marginBottom: "1rem" }}
       >
         count {count}
       </button>
